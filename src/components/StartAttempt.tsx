@@ -32,7 +32,12 @@ export function StartAttempt(): React.JSX.Element {
             >
                 Mulligan
             </Button>
-            <h3>Quiz: {prog ? <p>In progress</p> : <p>Not in progress</p>}</h3>
+            <h3>
+                Quiz:{" "}
+                {prog ?
+                    <p>In progress</p>
+                :   <p>Not in progress</p>}
+            </h3>
             <p>{attempts} attempts left</p>
         </div>
     );

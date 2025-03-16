@@ -12,7 +12,11 @@ export function RevealAnswer(): React.JSX.Element {
             >
                 Reveal Answer!
             </Button>
-            <div>{rev ? <p>42</p> : <p></p>}</div>
+            <div>
+                {rev ?
+                    <p>42</p>
+                :   <p></p>}
+            </div>
         </div>
     );
 }

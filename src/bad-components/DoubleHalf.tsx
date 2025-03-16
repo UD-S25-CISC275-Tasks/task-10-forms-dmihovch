@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
-
-
 export interface DoubleHalfProps {
-    dhValue: number
-    setDhValue: (setter: number) => void
+    dhValue: number;
+    setDhValue: (setter: number) => void;
 }
 
-function Doubler({dhValue,setDhValue}:DoubleHalfProps): React.JSX.Element {
+function Doubler({ dhValue, setDhValue }: DoubleHalfProps): React.JSX.Element {
     return (
         <Button
             onClick={() => {
@@ -20,7 +18,7 @@ function Doubler({dhValue,setDhValue}:DoubleHalfProps): React.JSX.Element {
     );
 }
 
-function Halver({dhValue,setDhValue}:DoubleHalfProps): React.JSX.Element {
+function Halver({ dhValue, setDhValue }: DoubleHalfProps): React.JSX.Element {
     return (
         <Button
             onClick={() => {
@@ -33,7 +31,6 @@ function Halver({dhValue,setDhValue}:DoubleHalfProps): React.JSX.Element {
 }
 
 export function DoubleHalf(): React.JSX.Element {
-    
     const [dhValue, setDhValue] = useState<number>(10);
 
     return (

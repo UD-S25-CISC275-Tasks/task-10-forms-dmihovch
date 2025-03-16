@@ -35,13 +35,11 @@ export function TwoDice(): React.JSX.Element {
             <span data-testid="right-die">{die2}</span>
 
             <h1>
-                {die1 === die2 && die1 != 1 && die1 != 0 ? (
+                {die1 === die2 && die1 != 1 && die1 != 0 ?
                     <p>Win</p>
-                ) : die1 !== die2 ? (
+                : die1 !== die2 ?
                     <p></p>
-                ) : (
-                    <p>Lose</p>
-                )}
+                :   <p>Lose</p>}
             </h1>
         </div>
     );

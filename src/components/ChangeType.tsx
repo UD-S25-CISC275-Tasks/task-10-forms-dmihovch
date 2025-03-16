@@ -19,11 +19,9 @@ export function ChangeType(): React.JSX.Element {
                 Change Type
             </Button>
             <p>Current Question Type:</p>
-            {type === "short_answer_question" ? (
+            {type === "short_answer_question" ?
                 <p>Short Answer</p>
-            ) : (
-                <p>Multiple Choice</p>
-            )}
+            :   <p>Multiple Choice</p>}
         </div>
     );
 }
